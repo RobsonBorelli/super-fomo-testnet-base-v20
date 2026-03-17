@@ -1,0 +1,11 @@
+_sfomoToken
+0x8cc88849C4851e185A8FfF2C554A58FFe1aC6b68
+
+_paymentToken
+0x036CbD53842c5426634e7929541eC2318f3dCF7e (USDC Sepolia)
+
+_claimStartTime
+1773864000 (ou outro timestamp futuro)
+
+Contract
+0x1366251D9650fd3987c0De313C04b1C73f03C83d

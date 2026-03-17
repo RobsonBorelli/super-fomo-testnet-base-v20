@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SFOMO - Super Fomo Token | Pre-Sale</title>
+    
+    <!-- Web3.js - ESSENCIAL PARA META MASK -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    
+    <!-- Font Awesome - PARA ÍCONES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Seu CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-bg-effects">
+            <div class="ray ray-1"></div>
+            <div class="ray ray-2"></div>
+            <div class="ray ray-3"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <!-- Hero Header -->
+                <div class="hero-header">
+                    <div class="logo-section">
+                        <div class="logo-container">
+                            <img src="logo.png" alt="SFOMO Logo" class="logo-main">
+                        </div>
+                    </div>
+                    
+                    <div class="presale-badge">
+                        <i class="fas fa-fire presale-fire"></i>
+                        <h1>SUPER FOMO - PRE SALE</h1>
+                    </div>
+                    
+                    <div class="hero-header-superhero">
+                        <img src="superhero-header.png" alt="Superhero" class="hero-header-superhero-img">
+                    </div>
+                </div>
+                
+                <!-- Slogan Inline -->
+                <div class="hero-slogan-inline">
+                    <i class="fas fa-bolt"></i>
+                    <span>The official coin of poor timing</span>
+                </div>
+                
+                <!-- Hero Text -->
+                <div class="hero-text">
+                    <h2 class="hero-title">
+                        UNLEASH THE POWER OF <span class="highlight">SFOMO!</span>
+                    </h2>
+                    <p class="hero-subtitle">
+                        Join the World's First Cryptocurrency with Absolutely No Purpose Other Than Hype! 
+                        Built on the Base Network. Don't Miss Out!
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#buy" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i> BUY SFOMO NOW
+                        </a>
+                        <a href="whitepaper.pdf" class="btn btn-secondary">
+                            <i class="fas fa-file-alt"></i> READ WHITEPAPER
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Price & Timer Container -->
+                <div class="price-timer-container">
+                    <div class="price-card">
+                        <div class="price-label">
+                            Current Price
+                            <span class="phase-badge">PHASE 1</span>
+                        </div>
+                        <div class="price-value">$0.0001</div>
+                        <div class="price-change">
+                            <i class="fas fa-arrow-up"></i> next phase +15%
+                        </div>
+                    </div>
+                    
+                    <div class="presale-timer-card-mini">
+                        <div class="timer-header-mini">
+                            <i class="fas fa-clock"></i>
+                            <span>Pre-Sale Ends In:</span>
+                        </div>
+                        <div class="timer-countdown-mini" id="presaleCountdown">
+                            <div class="timer-unit-mini">
+                                <span class="timer-value-mini" id="daysLeft">00</span>
+                                <span class="timer-label-mini">Days</span>
+                            </div>
+                            <div class="timer-unit-mini">
+                                <span class="timer-value-mini" id="hoursLeft">00</span>
+                                <span class="timer-label-mini">Hours</span>
+                            </div>
+                            <div class="timer-unit-mini">
+                                <span class="timer-value-mini" id="minutesLeft">00</span>
+                                <span class="timer-label-mini">Mins</span>
+                            </div>
+                            <div class="timer-unit-mini">
+                                <span class="timer-value-mini" id="secondsLeft">00</span>
+                                <span class="timer-label-mini">Secs</span>
+                            </div>
+                        </div>
+                        <div class="timer-end-date-mini">
+                            Ends: March 18, 2026 at 8:00 PM UTC
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hero Visual (Superhero) -->
+                <div class="hero-visual">
+                    <div class="superhero-container">
+                        <img src="superhero-main.png" alt="SUPER FOMO Token - Nonsense" class="superhero-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FEATURES SECTION -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">The SFOMO Ponzi-Meme</h2>
+            <p class="section-subtitle">Maximum FOMO</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>We have absolutely no real use cases</h3>
+                    <p>This is purely a meme for fun.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Hypothetical Hype</h3>
+                    <p>We are committed to providing the best memes and community laughs.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <h3>Infinite Memes</h3>
+                    <p>The main benefit is participating in a shared digital joke.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- STORY SECTION -->
+    <section class="story-section">
+        <div class="container">
+            <div class="story-container">
+                <div class="story-content">
+                    <div class="story-header">
+                        <i class="fas fa-question-circle story-icon"></i>
+                        <h2 class="section-title">What is SUPER FOMO?</h2>
+                    </div>
+                    
+                    <div class="story-text">
+                        <p class="story-lead">
+                            SUPER FOMO is a cryptocurrency that represents the investor dominated by emotion.
+                        </p>
+                        
+                        <div class="story-cards">
+                            <div class="story-card">
+                                <div class="story-card-icon">
+                                    <i class="fas fa-arrow-up"></i>
+                                </div>
+                                <h3>BUYS AT THE TOP</h3>
+                                <p>Because "it will go higher" 📈</p>
+                            </div>
+                            
+                            <div class="story-divider">
+                                <i class="fas fa-exchange-alt"></i>
+                            </div>
+                            
+                            <div class="story-card">
+                                <div class="story-card-icon">
+                                    <i class="fas fa-arrow-down"></i>
+                                </div>
+                                <h3>SELLS AT THE BOTTOM</h3>
+                                <p>Because "it will be worthless" 📉</p>
+                            </div>
+                        </div>
+                        
+                        <div class="story-conclusion">
+                            <span class="highlight-text">It's not a mistake. It's a lifestyle.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- BUY SECTION (SWAP) -->
+    <section class="buy-section" id="buy">
+        <div class="container">
+            <div class="buy-header">
+                <img src="coin.png" alt="SFOMO Coin" class="coin-image">
+                <h2 class="section-title">MEME SWAP: Pure FOMO Edition</h2>
+            </div>
+            
+            <div class="swap-container">
+                <!-- Swap Card -->
+                <div class="swap-card">
+                    <div class="swap-header">
+                        <h3>Pay with</h3>
+                        <div class="token-selector">
+                            <select id="payToken">
+                                <option value="USDC">USDC</option>
+                                <option value="USDT">USDT</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <input type="number" id="payAmount" class="swap-input" placeholder="0" value="100" min="0">
+                        <span class="input-label" id="payTokenLabel">USDC</span>
+                    </div>
+                    
+                    <div class="swap-arrow">
+                        <i class="fas fa-arrow-down"></i>
+                    </div>
+                    
+                    <div class="input-group">
+                        <input type="text" id="receiveAmount" class="swap-input" placeholder="0" readonly>
+                        <span class="input-label">SFOMO</span>
+                    </div>
+                    
+                    <div class="price-info">
+                        <div class="price-row">
+                            <span>Current Rate:</span>
+                            <span id="currentRate">1 USDC = 10,000 SFOMO</span>
+                        </div>
+                        <div class="price-row">
+                            <span>Price per Token:</span>
+                            <span>$0.0001 USD</span>
+                        </div>
+                        <div class="price-row">
+                            <span>Network:</span>
+                            <span>Base Mainnet</span>
+                        </div>
+                        <div class="price-row">
+                            <span>Token Approval:</span>
+                            <span id="approvalText" class="approval-pending">Not Approved</span>
+                        </div>
+                    </div>
+                    
+                    <button id="connectWalletBtn" class="btn btn-connect">
+                        <i class="fas fa-wallet"></i> Connect Wallet
+                    </button>
+                    
+                    <button id="approveTokenBtn" class="btn btn-approve" style="display: none;">
+                        <i class="fas fa-check-circle"></i> Approve USDC
+                    </button>
+                    
+                    <button id="confirmPurchaseBtn" class="btn btn-purchase" style="display: none;">
+                        <i class="fas fa-exchange-alt"></i> Swap Now
+                    </button>
+                    
+                    <button id="disconnectWalletBtn" class="btn btn-disconnect" style="display: none;">
+                        <i class="fas fa-sign-out-alt"></i> Disconnect
+                    </button>
+                    
+                    <div id="walletInfo" class="wallet-status" style="display: none;">
+                        <div class="status-item">
+                            <i class="fas fa-user"></i>
+                            <span id="statusAddress">Not Connected</span>
+                        </div>
+                        <div class="status-item">
+                            <i class="fas fa-coins"></i>
+                            <span id="statusBalance">0 USDC</span>
+                        </div>
+                        <div class="status-item">
+                            <i class="fas fa-link"></i>
+                            <span>Contract: <span id="contractAddress">0x8cc8...6b68</span></span>
+                        </div>
+                    </div>
+                    
+                    <div id="networkWarning" class="network-warning" style="display: none;">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <p>Please switch to Base Network</p>
+                        <button id="switchNetworkBtn" class="btn-small">
+                            <i class="fas fa-sync"></i> Switch Network
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Superhero Sidebar -->
+                <div class="superhero-sidebar">
+                    <img src="superhero-sidebar.png" alt="Superhero Sidebar" class="superhero-sidebar-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CLAIM SECTION -->
+    <section class="claim-section" id="claimSection" style="display: none;">
+        <div class="container">
+            <div class="claim-card">
+                <div class="claim-header">
+                    <i class="fas fa-gift"></i>
+                    <h3>Claim Your SFOMO Tokens</h3>
+                </div>
+                
+                <div class="claim-info">
+                    <p>The pre-sale has ended! You can now claim your tokens.</p>
+                    
+                    <div class="claim-balance">
+                        <span>Available to Claim:</span>
+                        <span id="claimableAmount">0 SFOMO</span>
+                    </div>
+                </div>
+                
+                <button id="claimBtn" class="btn-claim">
+                    <i class="fas fa-download"></i> Claim Tokens
+                </button>
+                
+                <div id="claimStatus" class="claim-status"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- HOW TO BUY SECTION -->
+    <section class="how-to-buy">
+        <div class="container">
+            <h2 class="section-title">How to Buy</h2>
+            <p class="section-subtitle">Get your SFOMO tokens in 3 simple steps</p>
+            
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Connect Your Wallet</h3>
+                        <p>MetaMask, WalletConnect or any Web3 wallet.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Select Network</h3>
+                        <p>BASE (Ethereum L2) - Chain ID: 8453</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Exchange USDT or USDC for SFOMO</h3>
+                        <p>Approve tokens and complete your purchase.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- COMMUNITY SECTION -->
+    <section class="community">
+        <div class="container">
+            <h2 class="section-title">Join Our Community</h2>
+            <p class="community-tagline">The best community in crypto... with no real tech!</p>
+            
+            <div class="social-links">
+                <a href="https://t.me/yourtelegram" class="social-btn telegram">
+                    <i class="fab fa-telegram"></i> Telegram
+                </a>
+                <a href="https://x.com/yourtwitter" class="social-btn twitter">
+                    <i class="fab fa-twitter"></i> X (Twitter)
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-mask"></i> SFOMO
+                </div>
+                <p class="footer-text">
+                    © 2026 Super Fomo Token. This is a meme coin with no intrinsic value or expectation of financial return. 
+                    For entertainment purposes only.
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Seu JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
